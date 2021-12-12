@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Estonia&family=Lato:ital,wght@1,300&family=Montserrat:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <title>DI-DI Sculpidas</title>
+    <link rel="shortcut icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="body">
+
+<!--Comienzo de Encabezado + botones navegables de la Web-->
+
+    <header class="encabezado">
+        <div class="encabezado__logoLema">
+            <a href="../index.html">
+                <img class="encabezado__logo" src="../images/logo1.png" alt="logo">
+            </a>
+            <h3 class="encabezado__lema""> Manicura y técnica profesional en uñas esculpidas</h3>
+        </div>
+        <nav class="encabezado__navegacion">
+            <ul class="encabezado__lista">
+                <li class= "encabezado__item"><a class="encabezado__enlace" href="./nosotras.html">Nosotras</a></li>
+                <li class= "encabezado__item"><a class="encabezado__enlace" href="./listadeprecios.html">Lista de Precios</a></li>
+                <li class= "encabezado__item"><a class="encabezado__enlace" href="./solicitatuturno.html">Solicita Tu Turno</a></li>
+                <li class= "encabezado__item"><a class="encabezado__enlace" href="./galeriadefotos.html">Galeria de Fotos</a></li>
+                <li class= "encabezado__item"><a class="encabezado__enlace" href="./proximamente.html">Proximamente!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr class="separador color-change-3x">
+
+<!--Final de Encabezado + botones navegables de la Web-->
+
+<!--Comienzo del cuerpo "Solicita Tu Turno"-->
+
+    <section class="form">
+        <div class="form__titulo">
+            <h3 class="contenedor__titulo" data-aos="fade-down" data-aos-delay="50" data-aos-once="true">Solicita Tu Turno</h3>
+        </div>
+        <div class="form__contenedor" data-aos="fade-down" data-aos-delay="100" data-aos-once="true">
+            <form action="#" method="get" enctype="text/plain">
+                <fieldset class="form__contenedorRecuadro">
+                    <label class="form__contenedorTitulo" for="diadelturno">Dia del turno:</label>
+                    <div class="form__contenedorOpcion">
+                        <input type="radio" name="diadelturno" value="lunes">Lunes
+                        <input type="radio" name="diadelturno" value="martes">Martes
+                        <input type="radio" name="diadelturno" value="miercoles">Miercoles
+                        <input type="radio" name="diadelturno" value="jueves">Jueves
+                        <input type="radio" name="diadelturno" value="viernes">Viernes
+                        <input type="radio" name="diadelturno" value="sabado">Sabado
+                    </div>
+                    <label class="form__contenedorTitulo" for="horariodelturno">Franja horaria:</label>
+                    <div class="form__contenedorOpcion">
+                        <input type="radio" name="horariodelturno" value="nueveADoce">De 9 a 12hs
+                        <input type="radio" name="horariodelturno" value="doceAQuince">De 12 a 15hs
+                        <input type="radio" name="horariodelturno" value="quinceADieciocho">De 15 a 18hs
+                    </div>
+                    <label class="form__contenedorTitulo" for="info-personal">Nombre:</label>
+                    <div class="form__contenedorText">
+                        <input type="text" name="user-info" id="info-personal" placeholder="Escriba su nombre">
+                    </div>
+                    <label class="form__contenedorTitulo" for="info-personal">Apellido:</label>
+                    <div class="form__contenedorText">
+                        <input type="text" name="user-info" id="info-personal" placeholder="Escriba su apellido">
+                    </div>
+                    <label class="form__contenedorTitulo" for="info-personal">Telefono de contacto:</label>
+                    <div class="form__contenedorText">
+                        <input type="text" name="user-info" id="info-personal">
+                    </div>
+                    <label class="form__contenedorTitulo" for="trabajoarealizar">¿Que tenes ganas de hacerte en las uñas?</label>
+                    <div class="form__contenedorText">
+                        <select name="user-work" id="trabajoarealizar">
+                            <option value="trabajoA">Uñas esculpidas en acrílico con dos decos simples</option>
+                            <option value="trabajoB">Capping acrilico / gel básicos con dos decos simples</option>
+                            <option value="trabajoC">Esmaltado semipermanente con dos decos simples</option>
+                            <option value="trabajoD">French / encapsulado / babyboomer en acrílico</option>
+                            <option value="trabajoE">Remoción de esculpidas / capping definitiva</option>
+                            <option value="trabajoF">Remoción de esculpidas / capping parcial</option>
+                        </select>
+                    </div>
+                    <label class="form__contenedorTitulo" for="adicionales">¿Queres añadir algun adicional?</label>
+                    <div class="form__contenedorText">
+                        <select name="user-work" id="adicionales">
+                            <option value="adicionalA">Ninguno</option>
+                            <option value="adicionalB">Caricaturas / Diseños 3D</option>
+                            <option value="adicionalC">Dijes chicos / muñecos Kawaii / piedras grandes</option>
+                            <option value="adicionalD">Piercings / polvos chromo</option>
+                        </select>
+                    </div>
+                    <label class="form__contenedorTitulo" for="campodetexto">Contanos en pocas palabras lo que querés. En breve te estamos contactando para confirmar el turno!:</label>
+                    <div class="form__contenedorText">
+                        <textarea class="form__textarea" name="explicaciondeltrabajo" id="campodetexto"></textarea>
+                    </div>
+                    <div class="form__contenedorbtn">
+                        <input class="btn" type="reset" value="REINICIAR FORMULARIO">
+                        <input class="btn" type="submit" value="ENVIAR">
+                        <input class="btn" type="button" value="NO HACE NADA">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+<!--Final del cuerpo "Solicita Tu Turno"-->
+
+<!--Comienzo del footer de la Web-->
+
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <h4 class="footer__titulo">
+                Aceptamos todos los metodos de pago!
+            </h4>
+            <ul class="footer__item">
+                <li>Efectivo</li>
+                <li>Mercado Pago</li>
+                <ul class="footer__item">
+                    <li>Tarjeta de Debito</li>
+                    <li>Tarjeta de Credito</li>
+                    <li>Transferencia</li>
+                </ul>
+            </ul>
+        </div>
+        <div class="footer__contenedor">
+            <div>
+                <nav class="footer__redes">
+                <ul class="footer__redesItem">
+                    <li><a href="https://www.instagram.com/esculpidas.didi/"><img class="footer__imgIg" src="../images/instagram logo.png" alt="instagram"></a></li>
+                    <li><a href="https://www.facebook.com/diana.carolina1986"><img class="footer__imgFb" src="../images/facebook logo.png" alt="facebook"></a></li>
+                </ul>
+             </nav>
+            </div>
+            <p class="footer__firma"><b>DI-DI Scuplidas!</b> Una idea de Diana Castro Hernández</p>
+        </div>
+    </footer>
+
+<!--Final del footer de la Web-->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> 
+     AOS.init();
+    </script>
+</body>
+</html>
